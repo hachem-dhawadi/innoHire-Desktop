@@ -1,0 +1,144 @@
+/* Styles.css */
+
+/* Barre de recherche */
+.search-box {
+    -fx-background-color: #FFD6E7; /* Rose clair */
+    -fx-background-radius: 100;
+}
+
+/* Éléments transparents */
+.transparent {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+/* Bouton de recherche */
+.search-button {
+    -fx-background-color: #6A0572; /* Violet foncé */
+    -fx-background-radius: 30;
+}
+
+/* Barre latérale droite */
+.right-bar {
+    -fx-background-color: #FFEBF3; /* Rose clair */
+}
+
+/* Effet d'ombre */
+.shadow {
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.5), 20.0, 0.0, 0.0, 20.0);
+}
+
+
+
+
+/* Liste déroulante */
+.comboBox {
+    -fx-background-color: rgba(255, 182, 193, 0.3); /* Rose clair avec transparence */
+    -fx-background-radius: 30;
+}
+
+/* Bouton Ajouter */
+.add-btn {
+    -fx-background-color: #FFC0CB; /* Rose */
+    -fx-background-radius: 30;
+}
+
+/* Carte Livraison gratuite */
+.free-delivery-card {
+    -fx-background-color: #FFC0CB; /* Rose */
+    -fx-background-radius: 30;
+}
+
+/* Carte Achat en ligne */
+.shopping-online-card {
+    -fx-background-color: #BAEAC3; /* Vert menthe */
+    -fx-background-radius: 30;
+}
+
+/* Élément d'établissement */
+.etablissement-item {
+    -fx-background-color: #FFFAFA; /* Blanc neige */
+    -fx-background-radius: 30;
+}
+.selected-item {
+    -fx-background-color: lightblue; /* Couleur de fond lors de la sélection */
+}
+.delete-button {
+    -fx-background-color: #FF0000; /* Red */
+    -fx-background-radius: 30;
+    -fx-cursor: hand; /* Optional: Show hand cursor on hover */
+}
+
+.delete-button:hover {
+    -fx-background-color: #CC0000; /* Darker red on hover */
+}
+
+.delete-button:pressed {
+    -fx-background-color: #990000; /* Even darker red when pressed */
+}
+
+
+    /* Carte d'établissement sélectionnée */
+.chosen-etablissement-card {
+    -fx-background-color: #B17EFA; /* Mauve */
+    -fx-background-radius: 30;
+}
+
+.chosen-etablissement-card:hover {
+    -fx-background-color: #8E44AD; /* Darker mauve on hover */
+}
+
+.chosen-etablissement-card:pressed {
+    -fx-background-color: #6C3483; /* Even darker mauve when pressed */
+}
+/* Nouveau style pour la carte d'établissement avec un autre effet de dégradé */
+.white-to-gray {
+    -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(to right, #FFFFFF, #808080); /* Dégradé de Blanc à Gris de gauche à droite */
+}
+
+.white-to-gray:hover {
+    -fx-background-color: linear-gradient(to right, #E0E0E0, #808080); /* Dégradé plus clair de Blanc à Gris au survol */
+}
+
+.white-to-gray:pressed {
+    -fx-background-color: linear-gradient(to right, #C0C0C0, #808080); /* Dégradé plus sombre de Blanc à Gris lorsqu'il est pressé */
+}
+.green-button {
+    -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(to right, #00FF00, #008000); /* Dégradé de Vert à Vert foncé de gauche à droite */
+}
+
+.green-button:hover {
+    -fx-background-color: linear-gradient(to right, #00FF00, #00C000); /* Dégradé plus clair de Vert à Vert foncé au survol */
+}
+
+.green-button:pressed {
+    -fx-background-color: linear-gradient(to right, #008000, #004000); /* Dégradé plus sombre de Vert à Vert foncé lorsqu'il est pressé */
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-button {
+    appearance: none;
+    padding: 8px;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #3498db;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.radio-button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.radio-button.checked {
+    background-color: #3498db;
+    color: #fff;
+}

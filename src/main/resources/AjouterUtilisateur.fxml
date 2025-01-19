@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1417.0" style="-fx-background-color: #632DE9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.AjouterUtilisateurController">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="676.0" prefWidth="773.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30 30 30 30;">
+            <children>
+                <ImageView fitHeight="110.0" fitWidth="97.0" layoutX="349.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Documents/java/InnoHire/projet_pidev/src/main/resources/images/blink.gif" />
+                    </image>
+                </ImageView>
+                <Label layoutX="237.0" layoutY="44.0" prefHeight="51.0" prefWidth="327.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 35;" text="Ajouter Utilisateur" />
+            <Button layoutX="571.0" layoutY="386.0" onAction="#choosePhoto" styleClass="button-normal" stylesheets="@service2.css" text="Choose Photo" />
+            <Button layoutX="346.0" layoutY="550.0" mnemonicParsing="false" onAction="#ajouterUtilisateurAction" prefHeight="46.0" prefWidth="95.0" stylesheets="@service2.css" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="469.0" layoutY="550.0" mnemonicParsing="false" onAction="#navigatetoAfficherUtilisateurAction" prefHeight="46.0" prefWidth="95.0" stylesheets="@service2.css" text="Afficher" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="comboRole" layoutX="213.0" layoutY="472.0" prefHeight="46.0" prefWidth="250.0" promptText="Select Role" styleClass="text-field" stylesheets="@service2.css">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Admin" />
+                     <String fx:value="Representant" />
+                     <String fx:value="Candidat" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Label layoutX="83.0" layoutY="460.0" prefHeight="46.0" prefWidth="140.0" text="ROLE" textFill="#000000a9">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="tfmdp" layoutX="213.0" layoutY="352.0" prefHeight="46.0" prefWidth="250.0" promptText="mdp" styleClass="label" stylesheets="@service2.css" />
+            <PasswordField fx:id="tfmdp_confirm" layoutX="213.0" layoutY="414.0" prefHeight="46.0" prefWidth="250.0" promptText="confirmmdp" styleClass="label" stylesheets="@service2.css" />
+            <ImageView fx:id="profileImageView" fitHeight="150.0" fitWidth="150.0" layoutX="551.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="imageETF" layoutX="492.0" layoutY="426.0" prefHeight="46.0" prefWidth="250.0" promptText="image" styleClass="text-field" stylesheets="@styles.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="465.0" fitWidth="471.0" layoutX="852.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/426808548_3676155596045641_5241302496940080339_n.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="1027.0" layoutY="60.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 35;" text="InnoHire" />
+        <Label layoutX="990.0" layoutY="656.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 15;" text="InnoHire 2024/2025 © (copyright)" />
+      <Label layoutX="239.0" layoutY="62.0" textFill="#000000a9">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TFcin" layoutX="232.0" layoutY="140.0" prefHeight="46.0" prefWidth="250.0" promptText="CIN" styleClass="label" stylesheets="@service2.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TFadresse" layoutX="232.0" layoutY="305.0" prefHeight="46.0" prefWidth="250.0" promptText="adresse" styleClass="label" stylesheets="@service2.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TFprenom" layoutX="232.0" layoutY="250.0" prefHeight="46.0" prefWidth="250.0" promptText="prenom" styleClass="label" stylesheets="@service2.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TFnom" layoutX="232.0" layoutY="193.0" prefHeight="46.0" prefWidth="250.0" promptText="nom" styleClass="label" stylesheets="@service2.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="142.0" layoutY="140.0" text="CIN" textFill="#000000a9">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="193.0" text="NOM" textFill="#000000a9">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="250.0" prefHeight="46.0" prefWidth="140.0" text="PRENOM" textFill="#000000a9">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="305.0" prefHeight="46.0" prefWidth="140.0" text="EMAIL" textFill="#000000a9">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="373.0" prefHeight="46.0" prefWidth="180.0" text="PASSWORD" textFill="#000000a9">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="433.0" prefHeight="46.0" prefWidth="150.0" text="Confirmer " textFill="#000000a9">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

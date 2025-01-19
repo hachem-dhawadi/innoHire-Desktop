@@ -1,0 +1,50 @@
+.text-input {
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: gray;
+    -fx-text-fill: black;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* Apply this style to your TextArea if needed */
+.text-area {
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: gray;
+    -fx-text-fill: black;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* styles.css */
+.button-normal {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-font-size: 13;
+}
+
+.button-normal:hover {
+    -fx-background-color: #5955b3;
+    -fx-text-fill: #ffffff;
+}
+.my-button {
+    background-color: #5955b3; /* Blue background color */
+    color: #ffffff; /* Text color on the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Change background color on hover */
+.my-button:hover {
+    background-color: #46428f; /* Darker blue color on hover */
+}

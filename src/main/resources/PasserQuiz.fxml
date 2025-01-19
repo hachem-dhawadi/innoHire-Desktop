@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="1371.0" style="-fx-background-color: #5955b3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.PasserQuizController">
+    <children>
+        <AnchorPane fx:id="container" layoutX="30.0" layoutY="22.0" prefHeight="675.0" prefWidth="956.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+            <children>
+                <Label layoutX="21.0" layoutY="14.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 25;" text="Pour passer un Quiz" />
+                <Button layoutX="386.0" layoutY="593.0" mnemonicParsing="false" onAction="#rechercherEtAfficherQuizzes" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: #00cc00; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;" text="Consulter Quiz ">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <TextField fx:id="codeEtablissementTextField" alignment="CENTER" layoutX="195.0" layoutY="159.0" prefHeight="410.0" prefWidth="619.0" style="-fx-background-color: #f2f2f2; -fx-border-color: #a0a0a0; -fx-border-radius: 5; -fx-font-size: 200; -fx-padding: 5;">
+               <font>
+                  <Font size="72.0" />
+               </font></TextField>
+            <ImageView fitHeight="110.0" fitWidth="182.0" layoutX="753.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/quiz.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="214.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TAPER LE CODE DE L'ETABLISSEMENT">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>            </children>
+        </AnchorPane>
+        <StackPane fx:id="StackPane" layoutX="994.0" layoutY="21.0" prefHeight="677.0" prefWidth="362.0">
+            <children>
+                <AnchorPane fx:id="AdminPane" prefHeight="675.0" prefWidth="363.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+                    <children>
+                        <Label layoutX="101.0" layoutY="630.0" style="-fx-text-fill: #9c95a7; -fx-font-weight: bold; -fx-font-size: 12;" text="InnoHire 2024/2025 © (copyright)" />
+                        <Label layoutX="34.0" layoutY="131.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 25;" text="Desktop" />
+                        <Label fx:id="LabelMail" alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="105.0" prefHeight="17.0" prefWidth="194.0" style="-fx-text-fill: #9c95a7; -fx-font-weight: bold; -fx-font-size: 12;" text="Admin@esprit.tn" />
+                        <Label fx:id="receiverNameLabel21" alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="84.0" prefHeight="20.0" prefWidth="219.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 16;" text="Admin" textAlignment="CENTER" />
+                        <Label layoutX="292.0" layoutY="149.0" style="-fx-text-fill: #9c95a7; -fx-font-weight: bold; -fx-font-size: 12;" text="See all" />
+                        <AnchorPane fx:id="AnchoPaneMessage1311" layoutX="24.0" layoutY="175.0" prefHeight="455.0" prefWidth="315.0" style="-fx-background-color: #f2f5ec; -fx-background-radius: 10;">
+                            <children>
+                                <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" style="-fx-background-color: #5955b3; -fx-text-fill: #ffffff;" styleClass="button-normal" stylesheets="@css/styles.css" text="List Question">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button layoutX="14.0" layoutY="63.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="List users">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button layoutX="14.0" layoutY="118.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Make Post">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button layoutX="17.0" layoutY="174.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="List Claim">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button layoutX="17.0" layoutY="229.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Etablishment">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button layoutX="17.0" layoutY="345.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Settings &amp; Privacy">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button layoutX="17.0" layoutY="399.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Help &amp; Support">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button layoutX="17.0" layoutY="288.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Chat">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                        <Button layoutX="307.0" layoutY="13.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="37.0" style="-fx-background-color: #ffffff; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 50; -fx-font-size: 13;">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

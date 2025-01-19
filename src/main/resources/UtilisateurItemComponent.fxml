@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="81.0" prefWidth="859.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.UtilisateurItemComponent">
+   <children>
+      <HBox prefHeight="71.0" prefWidth="859.0">
+         <children>
+            <AnchorPane fx:id="AnchoPaneMessage1111" prefHeight="71.0" prefWidth="858.0" style="-fx-background-color: #f2f5ec; -fx-background-radius: 10;">
+               <children>
+                  <Label fx:id="userCIN" layoutX="14.0" layoutY="23.0" prefHeight="27.0" prefWidth="129.0" style="-fx-text-fill: #000000; -fx-font-size: 14; -fx-font-weight: bold;" text="Mohamed Amine" />
+                  <Label fx:id="UserPRENOM" layoutX="268.0" layoutY="24.0" prefHeight="27.0" prefWidth="122.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 14;" text="#Violance" />
+                  <Label fx:id="UserAdresse" layoutX="402.0" layoutY="24.0" prefHeight="27.0" prefWidth="179.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 14;" text="2024-02-22 00:00:00" />
+                  <Button layoutX="783.0" layoutY="18.0" mnemonicParsing="false" onAction="#deleteUtilisateurAction" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: #f2f5ec; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/msi/Desktop/projet_pidev/src/img/delete%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="741.0" layoutY="18.0" mnemonicParsing="false" onAction="#modifierUser" prefHeight="36.0" prefWidth="0.0" style="-fx-background-color: #f2f5ec; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/msi/Desktop/projet_pidev/src/img/cogwheel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="699.0" layoutY="19.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="0.0" style="-fx-background-color: #f2f5ec; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="userNOM" layoutX="130.0" layoutY="23.0" prefHeight="27.0" prefWidth="129.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 14;" text="2750" />
+                  <Label fx:id="UserRole" layoutX="633.0" layoutY="24.0" prefHeight="27.0" prefWidth="33.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 14;" text="2024-02-22 00:00:00" />
+                  <Button layoutX="696.0" layoutY="20.0" mnemonicParsing="false" onAction="#activateUser" prefHeight="36.0" prefWidth="0.0" style="-fx-background-color: #f2f5ec; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/msi/Desktop/projet_pidev/src/img/jaccepte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

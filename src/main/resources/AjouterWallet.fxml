@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="503.0" style="-fx-background-color: #5955b3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.AjouterWalletController">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="35.0" prefHeight="413.0" prefWidth="453.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="59.0" layoutY="106.0" prefHeight="36.0" prefWidth="98.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 15;" text="Date Creation" />
+            <Label layoutX="91.0" layoutY="157.0" prefHeight="36.0" prefWidth="72.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 15;" text="Balance" />
+            <Label layoutX="94.0" layoutY="209.0" prefHeight="36.0" prefWidth="72.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 15;" text="Status" />
+            <Label layoutX="152.0" layoutY="4.0" prefHeight="58.0" prefWidth="187.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 25;" text="Ajouter Wallet" />
+            <TextField fx:id="BalanceETF" layoutX="165.0" layoutY="149.0" prefHeight="46.0" prefWidth="250.0" promptText="Balance" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dateCreationETF" editable="false" layoutX="164.0" layoutY="96.0" prefHeight="46.0" prefWidth="250.0" promptText="Date Creattion" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="statusETF" editable="false" layoutX="164.0" layoutY="202.0" prefHeight="46.0" prefWidth="250.0" promptText="Statut" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <CheckBox fx:id="checkBoxRegle" layoutX="76.0" layoutY="268.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="119.0" text="j'accepte tout les " />
+            <Label fx:id="labelRegle" layoutX="190.0" layoutY="268.0" text="Regles et Conditions d'utilisation" textFill="#37b8dc" underline="true" />
+            <TextField fx:id="code_EtabETF" editable="false" layoutX="396.0" layoutY="14.0" prefHeight="26.0" prefWidth="44.0" promptText="Code etablissement" styleClass="text-field" stylesheets="@service2.css" text="hiden matfskhch">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Button layoutX="180.0" layoutY="294.0" mnemonicParsing="false" onAction="#ajouterWalletAction" prefHeight="46.0" prefWidth="95.0" style="-fx-background-color: #5955b3;" styleClass="label2" stylesheets="@service2.css" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="180.0" layoutY="352.0" mnemonicParsing="false" onAction="#navigatetoAfficherEtablissementAction" prefHeight="46.0" prefWidth="95.0" style="-fx-background-color: #5955b3;" styleClass="label2" stylesheets="@service2.css" text="Afficher" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="75.0" fitWidth="111.0" layoutX="16.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/wallet%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="changeStatus" fitHeight="28.0" fitWidth="27.0" layoutX="445.0" layoutY="244.0" onMouseClicked="#changeStatus" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/change.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

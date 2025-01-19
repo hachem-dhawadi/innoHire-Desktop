@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.CreateAccountController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="789.0" prefWidth="1427.0" style="-fx-background-color: #632DE9;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="747.0" prefWidth="1008.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30 30 30 30;">
+               <children>
+                  <Button layoutX="102.0" layoutY="578.0" mnemonicParsing="false" onAction="#ajouterUtilisateurAction" prefHeight="45.0" prefWidth="233.0" style="-fx-background-color: #5955b3; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 16;" text="Ajouter">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="110.0" fitWidth="97.0" layoutX="349.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Documents/java/InnoHire/projet_pidev/src/main/resources/images/blink.gif" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="151.0" layoutY="39.0" prefHeight="46.0" prefWidth="410.0" text="Ajouter Compte Utilisateur" textFill="#000000a9">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TFcin" layoutX="203.0" layoutY="123.0" prefHeight="46.0" prefWidth="250.0" promptText="CIN" styleClass="text-field">
+                     <stylesheets>
+                        <URL value="@service2.css" />
+                        <URL value="@service2.css" />
+                     </stylesheets>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="TFadresse" layoutX="203.0" layoutY="303.0" prefHeight="46.0" prefWidth="250.0" promptText="adresse" styleClass="text-field" stylesheets="@service2.css">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="TFprenom" layoutX="203.0" layoutY="243.0" prefHeight="46.0" prefWidth="250.0" promptText="prenom" styleClass="text-field" stylesheets="@service2.css">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="TFnom" layoutX="203.0" layoutY="183.0" prefHeight="46.0" prefWidth="250.0" promptText="nom" styleClass="text-field" stylesheets="@service2.css">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="519.0" layoutY="464.0" mnemonicParsing="false" onAction="#choosePhoto" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #632DE9;" stylesheets="@service2.css" text="Ajouter Photo" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="124.0" layoutY="123.0" text="CIN" textFill="#000000a9">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="183.0" text="NOM" textFill="#000000a9">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="246.0" prefHeight="46.0" prefWidth="140.0" text="PRENOM" textFill="#000000a9">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="303.0" prefHeight="46.0" prefWidth="105.0" text="EMAIL" textFill="#000000a9">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="363.0" prefHeight="46.0" prefWidth="180.0" text="PASSWORD" textFill="#000000a9">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="500.0" prefHeight="46.0" prefWidth="91.0" text="ROLE" textFill="#000000a9">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboRole" layoutX="203.0" layoutY="500.0" prefHeight="46.0" prefWidth="250.0" promptText="Select Role" styleClass="text-field" stylesheets="@service2.css">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="Representant" />
+                           <String fx:value="Candidat" />
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+                  <ImageView fx:id="profileImageView" fitHeight="123.0" fitWidth="145.0" layoutX="517.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true" />
+                  <PasswordField fx:id="tfmdp" layoutX="203.0" layoutY="363.0" prefHeight="46.0" prefWidth="250.0" promptText="mdp" stylesheets="@service2.css" />
+                  <Label layoutX="28.0" layoutY="423.0" prefHeight="46.0" prefWidth="150.0" text="Confirmer " textFill="#000000a9">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="tfmdp_confirm" layoutX="203.0" layoutY="423.0" prefHeight="46.0" prefWidth="250.0" promptText="confirmmdp" stylesheets="@service2.css" />
+                  <Button layoutX="418.0" layoutY="581.0" mnemonicParsing="false" onAction="#cancelAjouter" prefHeight="45.0" prefWidth="233.0" style="-fx-background-color: #5955b3; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 16;" text="Cancel">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TextField fx:id="imageETF" layoutX="464.0" layoutY="510.0" prefHeight="46.0" prefWidth="250.0" promptText="image" styleClass="text-field" stylesheets="@styles.css">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="captchaETF" layoutX="470.0" layoutY="195.0" prefHeight="46.0" prefWidth="250.0" promptText="captcha" styleClass="text-field" stylesheets="@styles.css">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fx:id="profileImageCaptcha" fitHeight="294.0" fitWidth="294.0" layoutX="720.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="525.0" layoutY="243.0" mnemonicParsing="false" onAction="#GenererCaptcha" prefHeight="46.0" prefWidth="165.0" style="-fx-background-color: #632DE9;" stylesheets="@service2.css" text="Generer Captcha" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="383.0" fitWidth="282.0" layoutX="1035.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/429754006_4516447245246591_2302902658115282336_n.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1088.0" layoutY="58.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 35;" text="InnoHire" />
+            <Label layoutX="990.0" layoutY="656.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 15;" text="InnoHire 2024/2025 © (copyright)" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

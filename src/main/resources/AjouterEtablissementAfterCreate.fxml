@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1417.0" style="-fx-background-color: #632DE9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.AjouterEtablissementAfterCreate">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="676.0" prefWidth="773.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30 30 30 30;">
+            <children>
+                <Label layoutX="277.0" layoutY="27.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 35;" text="Ajouter Etablissement" />
+                <ImageView fitHeight="110.0" fitWidth="97.0" layoutX="349.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Documents/java/InnoHire/projet_pidev/src/main/resources/images/blink.gif" />
+                    </image>
+                </ImageView>
+            <TextField fx:id="NomETF" layoutX="199.0" layoutY="147.0" prefHeight="46.0" prefWidth="250.0" promptText="Nom Etablissement" styleClass="text-field">
+               <stylesheets>
+                  <URL value="@service2.css" />
+                  <URL value="@service2.css" />
+               </stylesheets>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="LieuETF" layoutX="199.0" layoutY="225.0" prefHeight="46.0" prefWidth="250.0" promptText="lieu" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="CodeETF" layoutX="199.0" layoutY="304.0" prefHeight="46.0" prefWidth="250.0" promptText="code" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cin_utilisateurETF" editable="false" layoutX="494.0" layoutY="202.0" prefHeight="46.0" prefWidth="250.0" promptText="cin_user" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="570.0" layoutY="157.0" text="CIN_USER" textFill="#000000a9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="235.0" prefHeight="27.0" prefWidth="61.0" text="LIEU" textFill="#000000a9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="325.0" prefHeight="27.0" prefWidth="61.0" text="CODE" textFill="#000000a9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="384.0" prefHeight="27.0" prefWidth="61.0" text="Type" textFill="#000000a9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TypeETF" layoutX="199.0" layoutY="374.0" prefHeight="46.0" prefWidth="250.0" promptText="type" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="126.0" layoutY="157.0" text="NOM" textFill="#000000a9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="411.0" layoutY="521.0" mnemonicParsing="false" onAction="#ajouterEtablissementAction" prefHeight="46.0" prefWidth="95.0" styleClass="label2" stylesheets="@service2.css" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="517.0" layoutY="521.0" mnemonicParsing="false" onAction="#skip" prefHeight="46.0" prefWidth="95.0" styleClass="label2" stylesheets="@service2.css" text="SKIP" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="imageETF" layoutX="481.0" layoutY="454.0" prefHeight="46.0" prefWidth="250.0" promptText="image" styleClass="text-field" stylesheets="@styles.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Button layoutX="528.0" layoutY="408.0" mnemonicParsing="false" onAction="#choosePhoto" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #632DE9;" stylesheets="@service2.css" text="Ajouter Photo" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="EtabImageView" fitHeight="123.0" fitWidth="145.0" layoutX="526.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="465.0" fitWidth="471.0" layoutX="852.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="file:/C:/Users/msi/Desktop/projet_pidev/src/img/429633241_3224965130971874_9121688183739140822_n.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="1027.0" layoutY="60.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 35;" text="InnoHire" />
+        <Label layoutX="990.0" layoutY="656.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 15;" text="InnoHire 2024/2025 © (copyright)" />
+      <Label layoutX="336.0" layoutY="34.0" textFill="#000000a9">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1417.0" style="-fx-background-color: #632DE9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.LoginController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="676.0" prefWidth="773.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30 30 30 30;">
+         <children>
+            <TextField fx:id="TFcin" layoutX="153.0" layoutY="225.0" prefHeight="45.0" prefWidth="453.0" promptText="Cin" style="-fx-background-color: #f2f5ec; -fx-border-radius: 10;" />
+            <Label fx:id="LabelCIN" alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="200.0" prefHeight="25.0" prefWidth="42.0" style="-fx-text-fill: #632DE9; -fx-font-weight: bold; -fx-font-size: 16;" text="Cin" textAlignment="CENTER" />
+            <Label fx:id="LabelPASSWORD" alignment="CENTER" contentDisplay="CENTER" layoutX="158.0" layoutY="290.0" prefHeight="30.0" prefWidth="75.0" style="-fx-text-fill: #632DE9; -fx-font-weight: bold; -fx-font-size: 16;" text="Password" textAlignment="CENTER" />
+            <Label fx:id="LabelFORGOT" alignment="CENTER" contentDisplay="CENTER" layoutX="499.0" layoutY="365.0" prefHeight="30.0" prefWidth="107.0" style="-fx-text-fill: #632DE9; -fx-font-size: 12;" text="Forget Password ?" textAlignment="CENTER" />
+            <Button layoutX="153.0" layoutY="421.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="45.0" prefWidth="453.0" style="-fx-background-color: #5955b3; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 16;" text="Sign In">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="receiverNameLabel2121" alignment="CENTER" contentDisplay="CENTER" layoutX="518.0" layoutY="631.0" prefHeight="30.0" prefWidth="128.0" style="-fx-text-fill: #632DE9; -fx-font-size: 12;" text="Dont have an account ? " textAlignment="CENTER" />
+            <Label layoutX="277.0" layoutY="110.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 35;" text="Welcome Back" />
+
+            <Button layoutX="653.0" layoutY="631.0" mnemonicParsing="false" onAction="#navigateToCreateAccount" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #5955b3; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 12;" text="Register Now !!">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <PasswordField fx:id="TFmdp" layoutX="153.0" layoutY="320.0" prefHeight="45.0" prefWidth="453.0" promptText="Password" style="-fx-background-color: #f2f5ec; -fx-border-radius: 10;" />
+            <Button layoutX="606.0" layoutY="365.0" mnemonicParsing="false" onAction="#navigateToPassRecovery" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: #5955b3; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 12;" text="mot de passe oublié">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="101.0" fitWidth="145.0" layoutX="313.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/382876686_2550356941793712_7809494747563560197_n.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+
+      <Label layoutX="1027.0" layoutY="60.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 35;" text="InnoHire" />
+      <Label layoutX="990.0" layoutY="656.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-font-size: 15;" text="InnoHire 2024/2025 © (copyright)" />
+      <ImageView fitHeight="539.0" fitWidth="577.0" layoutX="804.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/429633241_3224965130971874_9121688183739140822_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

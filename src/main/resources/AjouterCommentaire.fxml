@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="483.0" prefWidth="703.0" style="-fx-background-color: #5955b3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.AjouterCommentaire">
+   <children>
+      <AnchorPane fx:id="container" layoutX="14.0" layoutY="11.0" prefHeight="462.0" prefWidth="675.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="59.0" layoutY="14.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 25;" text="ADD YOUR COMMENT" />
+            <TextField fx:id="cinTF1" editable="false" layoutX="108.0" layoutY="104.0" prefHeight="26.0" prefWidth="56.0" promptText="cin" />
+            <DatePicker fx:id="dateTf1" layoutX="108.0" layoutY="349.0" prefHeight="31.0" prefWidth="146.0" promptText="jj-mm-yyyy" />
+            <TextField fx:id="descriptionTF1" alignment="TOP_LEFT" layoutX="108.0" layoutY="163.0" prefHeight="166.0" prefWidth="318.0" promptText="caption" />
+            <Button fx:id="validerCommentaire" layoutX="468.0" layoutY="399.0" mnemonicParsing="false" onAction="#validerCommentaire" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: #00cc00; -fx-background-radius: 10; -fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Add" />
+      
+            <Button fx:id="afficherCommentaire" layoutX="581.0" layoutY="399.0" mnemonicParsing="false" onAction="#navigatetoAfficherCommentaireAction" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #FF0000; -fx-background-radius: 10; -fx-text-fill: #FFFFFF; -fx-font-weight: bold;" styleClass="label2" text="Cancel">
+
+      </Button>
+            <Label layoutX="7.0" layoutY="148.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 20;" text="Caption:" />
+            <Label layoutX="13.0" layoutY="89.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 20;" text="Cin:" />
+         </children>
+      </AnchorPane>
+
+   </children>
+</AnchorPane>

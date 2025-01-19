@@ -1,0 +1,100 @@
+.button
+ {
+  -fx-background-color : #FFE4B5;
+ -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+ -fx-background-radius: 20px; /* Rayon de courbure du fond */
+  }
+  .button:hover
+  {
+  -fx-background-color :#FFE4B5;
+ -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+ -fx-background-radius: 20px; /* Rayon de courbure du fond */
+  }
+  .button:pressed
+    {
+    -fx-background-color : #EE82EE;
+      -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+      -fx-background-radius: 20px; /* Rayon de courbure du fond */
+    }
+  .text-field {
+      -fx-background-color: #FFFFFF; /* Couleur de fond blanche */
+      -fx-border-color: #459BFD; /* Couleur de la bordure */
+      -fx-border-width: 1px; /* Largeur de la bordure */
+      -fx-background-radius: 20px; /* Rayon de courbure du fond */
+      -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+  }
+.label {
+    -fx-font-weight: bold;
+
+    }
+    .label2 {
+        -fx-font-weight: SemiBold;
+
+        }
+/* Style de base pour un tableau */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style des cellules du tableau */
+.table td, .table th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+/* Style des en-têtes de colonne */
+.table th {
+    background-color: #459BFD; /* Couleur de fond spécifique */
+    color: #FFFFFF; /* Couleur du texte */
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+
+/* Style des lignes au survol */
+.table tr:hover {
+    background-color: #f2f2f2;
+}
+/* Style des flèches du Spinner */
+.spinner .increment-arrow-button
+{
+    -fx-background-color: #FFFFFF; /* Couleur de fond pour les boutons */
+     -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+     -fx-background-radius: 20px; /* Rayon de courbure du fond */
+}
+.spinner .decrement-arrow-button {
+    -fx-background-color: #FFFFFF; /* Couleur de fond pour les boutons */
+     -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+     -fx-background-radius: 20px; /* Rayon de courbure du fond */
+}
+
+
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-shape: "M 0 0 L 6 6 L 12 0 Z"; /* Forme des flèches */
+    -fx-fill: #459BFD; /* Couleur des flèches */
+}
+.spinner .increment-arrow-button .increment-arrow{
+-fx-shape: "M 0 0 L 6 6 L 12 0 Z"; /* Forme des flèches */
+-fx-fill: #459BFD; /* Couleur des flèches */
+ }
+
+
+.my-element {
+    -fx-border-width: 1px; /* Spécification de la largeur de la bordure */
+    -fx-border-color: black; /* Spécification de la couleur de la bordure */
+}
+
+.green-button {
+    -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(to right,  #FFE4B5, #9370DB); /* Dégradé de Vert à Vert foncé de gauche à droite /
+}
+
+
+.green-button:hover {
+    -fx-background-color: linear-gradient(to right, #00FF00, #00C000); / Dégradé plus clair de Vert à Vert foncé au survol /
+}
+
+.green-button:pressed {
+    -fx-background-color: linear-gradient(to right, #008000, #004000); / Dégradé plus sombre de Vert à Vert foncé lorsqu'il est pressé */
+}

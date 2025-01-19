@@ -1,0 +1,88 @@
+.button
+ {
+  -fx-background-color : #5d20d3;
+ -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+ -fx-background-radius: 20px; /* Rayon de courbure du fond */
+  }
+  .button:hover
+  {
+  -fx-background-color : #07f7f7;
+ -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+ -fx-background-radius: 20px; /* Rayon de courbure du fond */
+  }
+  .button:pressed
+    {
+    -fx-background-color : #5d20d3;
+      -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+      -fx-background-radius: 20px; /* Rayon de courbure du fond */
+    }
+  .text-field {
+      -fx-background-color: #FFFFFF; /* Couleur de fond blanche */
+      -fx-border-color: #5d20d3; /* Couleur de la bordure */
+      -fx-border-width: 1px; /* Largeur de la bordure */
+      -fx-background-radius: 20px; /* Rayon de courbure du fond */
+      -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+      -fx-text-color: #000000;
+  }
+.label {
+    -fx-font-weight: bold;
+
+    }
+    .label2 {
+        -fx-font-weight: SemiBold;
+
+        }
+/* Style de base pour un tableau */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style des cellules du tableau */
+.table td, .table th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+/* Style des en-têtes de colonne */
+.table th {
+    background-color: #5d20d3; /* Couleur de fond spécifique */
+    color: #FFFFFF; /* Couleur du texte */
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+
+/* Style des lignes au survol */
+.table tr:hover {
+    background-color: #f2f2f2;
+}
+/* Style des flèches du Spinner */
+.spinner .increment-arrow-button
+{
+    -fx-background-color: #FFFFFF; /* Couleur de fond pour les boutons */
+     -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+     -fx-background-radius: 20px; /* Rayon de courbure du fond */
+}
+.spinner .decrement-arrow-button {
+    -fx-background-color: #FFFFFF; /* Couleur de fond pour les boutons */
+     -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+     -fx-background-radius: 20px; /* Rayon de courbure du fond */
+}
+
+
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-shape: "M 0 0 L 6 6 L 12 0 Z"; /* Forme des flèches */
+    -fx-fill: #5d20d3; /* Couleur des flèches */
+}
+.spinner .increment-arrow-button .increment-arrow{
+-fx-shape: "M 0 0 L 6 6 L 12 0 Z"; /* Forme des flèches */
+-fx-fill: #5d20d3; /* Couleur des flèches */
+ }
+.split-menu-button {
+    -fx-background-color: #5d20d3;
+    -fx-border-radius: 20px; /* Rayon de courbure de la bordure */
+    -fx-background-radius: 20px; /* Rayon de courbure du fond */
+}
+
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="728.0" prefWidth="1011.0" style="-fx-background-color: #5955b3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.AjouterEtablissementController">
+   <children>
+      <AnchorPane fx:id="container" layoutX="24.0" layoutY="24.0" prefHeight="675.0" prefWidth="956.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="320.0" layoutY="33.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 25;" text="AjouterEtablissement" />
+            <AnchorPane fx:id="selecUserAnchor" layoutX="408.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="243.0" prefWidth="509.0" style="-fx-background-color: #8B5F7A;">
+               <children>
+                  <BorderPane layoutX="6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <center>
+                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="642.0" prefWidth="804.0" style="-fx-background-color: #5955b3;" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <ScrollPane fx:id="scrollA" fitToWidth="true" prefHeight="195.0" prefWidth="628.0" styleClass="transparent" HBox.hgrow="ALWAYS">
+                                       <content>
+                                          <GridPane fx:id="gridA" prefHeight="0.0" prefWidth="0.0" styleClass="grid-pane">
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </content>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ScrollPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </center>
+                     <top>
+                        <HBox prefHeight="37.0" prefWidth="1144.0" style="-fx-background-color: #5955b3;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="22.0" />
+                              <Label fx:id="receiverNameLabel211111" prefHeight="27.0" prefWidth="97.0" style="-fx-text-fill: #f7f5f5; -fx-font-weight: bold; -fx-font-size: 16;" text="    Photo" textFill="#fff9f9" />
+                              <Label fx:id="receiverNameLabel2111111" prefHeight="27.0" prefWidth="208.0" style="-fx-text-fill: #f7f5f5; -fx-font-weight: bold; -fx-font-size: 16;" text="Full Name" />
+                              <Label fx:id="receiverNameLabel21111121" prefHeight="27.0" prefWidth="116.0" style="-fx-text-fill: #f7f5f5; -fx-font-weight: bold; -fx-font-size: 16;" text="Cin" />
+                           </children>
+                        </HBox>
+                     </top>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="cin_utilisateurETF" layoutX="694.0" layoutY="46.0" prefHeight="46.0" prefWidth="250.0" promptText="cin_user" styleClass="text-field" stylesheets="@service2.css" text="hidden Matmeshech">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Button layoutX="547.0" layoutY="516.0" mnemonicParsing="false" onAction="#navigatetoAfficherEtablissementAction" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #FF0000; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;" text="Cancel">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/multiply.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="listeUsersLabels" layoutX="458.0" layoutY="92.0" prefHeight="36.0" prefWidth="98.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 15;" text="Liste Users" />
+            <Label layoutX="89.0" layoutY="200.0" prefHeight="36.0" prefWidth="72.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 15;" text="Lieu" />
+            <Label layoutX="88.0" layoutY="280.0" prefHeight="36.0" prefWidth="72.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 15;" text="Code" />
+            <Label layoutX="88.0" layoutY="342.0" prefHeight="36.0" prefWidth="72.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 15;" text="Type" />
+            <Label layoutX="86.0" layoutY="415.0" prefHeight="36.0" prefWidth="72.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 15;" text="Image" />
+            <Label fx:id="labelType" layoutX="26.0" layoutY="369.0" text="hidden (matfaskhhech)" />
+            <ImageView fitHeight="69.0" fitWidth="92.0" layoutX="26.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/school2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="NomETF" layoutX="162.0" layoutY="141.0" prefHeight="46.0" prefWidth="250.0" promptText="Nom Etablissement" styleClass="text-field" stylesheets="@styles.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="CodeETF" layoutX="162.0" layoutY="299.0" prefHeight="46.0" prefWidth="250.0" promptText="code" styleClass="text-field" stylesheets="@styles.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="LieuETF" layoutX="163.0" layoutY="219.0" prefHeight="46.0" prefWidth="250.0" promptText="lieu" styleClass="text-field" stylesheets="@styles.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="208.0" layoutY="486.0" mnemonicParsing="false" onAction="#importImage" style="-fx-background-color: #5955b3;" styleClass="my-button" stylesheets="@styles.css" text="importer image" textFill="WHITE" />
+      <TextField fx:id="imageETF" layoutX="166.0" layoutY="435.0" prefHeight="46.0" prefWidth="250.0" promptText="image" styleClass="text-field" stylesheets="@styles.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="imageViewETF" fitHeight="150.0" fitWidth="200.0" layoutX="159.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true" />
+      <CheckBox fx:id="checkBoxRegle" layoutX="484.0" layoutY="449.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="119.0" text="j'accepte tout les " />
+      <Label fx:id="labelRegle" layoutX="598.0" layoutY="449.0" text="Regles et Conditions d'utilisation" textFill="#37b8dc" underline="true" />
+      <RadioButton fx:id="collegeRadio" layoutX="188.0" layoutY="399.0" mnemonicParsing="false" onAction="#getType" text="College">
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="lyceeRadio" layoutX="300.0" layoutY="360.0" mnemonicParsing="false" onAction="#getType" text="Lycee" toggleGroup="$type" />
+      <RadioButton fx:id="ecoleRadio" layoutX="300.0" layoutY="398.0" mnemonicParsing="false" onAction="#getType" stylesheets="@style.css" text="Ecole" toggleGroup="$type" />
+      <RadioButton fx:id="faculteRadio" layoutX="186.0" layoutY="360.0" mnemonicParsing="false" onAction="#getType" stylesheets="@css/styles.css" text="Faculte" toggleGroup="$type" />
+      <Button layoutX="578.0" layoutY="501.0" mnemonicParsing="false" onAction="#ajouterEtablissementAction" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #00cc00; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;" text="New">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="110.0" layoutY="143.0" prefHeight="36.0" prefWidth="72.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 15;" text="Nom" />
+
+
+
+   </children>
+</AnchorPane>

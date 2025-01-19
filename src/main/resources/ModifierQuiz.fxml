@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="1409.0" style="-fx-background-color: #5955b3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.ModifierQuizController">
+    <children>
+        <AnchorPane fx:id="container" layoutX="41.0" layoutY="32.0" prefHeight="675.0" prefWidth="956.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+            <children>
+                <Label layoutX="21.0" layoutY="14.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 25;" />
+                <Button layoutX="534.0" layoutY="442.0" mnemonicParsing="false" onAction="#ModifierQuizAction" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #00cc00; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;" text="Modifier">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/plus.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="378.0" layoutY="607.0" mnemonicParsing="false" onAction="#navigateToAfficher" prefHeight="39.0" prefWidth="282.0" style="-fx-background-color: #5955b3; -fx-text-fill: #ffffff;" styleClass="button-normal" stylesheets="@css/styles.css" text="Afficher List Quiz">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button layoutX="534.0" layoutY="383.0" mnemonicParsing="false" onAction="#importImage1" prefHeight="39.0" prefWidth="107.0" style="-fx-background-color: #5955b3; -fx-text-fill: #ffffff;" styleClass="button-normal" stylesheets="@css/styles.css" text="Importer">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            <TextField fx:id="TFCode1" layoutX="350.0" layoutY="139.0" prefHeight="46.0" prefWidth="290.0" styleClass="text-field">
+               <stylesheets>
+                  <URL value="@service2.css" />
+                  <URL value="@service2.css" />
+               </stylesheets>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TFNom1" layoutX="350.0" layoutY="198.0" prefHeight="46.0" prefWidth="290.0" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="imageViewQ1" fitHeight="75.0" fitWidth="84.0" layoutX="279.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="TFDesc1" layoutX="350.0" layoutY="258.0" prefHeight="46.0" prefWidth="290.0" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TFprix1" layoutX="349.0" layoutY="320.0" prefHeight="46.0" prefWidth="290.0" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="imageView1" layoutX="378.0" layoutY="380.0" prefHeight="46.0" prefWidth="149.0" styleClass="text-field" stylesheets="@service2.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="114.0" layoutY="268.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 16;" text="DONNEZ LE NOUVEAU NIVEAU" />
+            <Label layoutX="124.0" layoutY="208.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 16;" text="DONNEZ LE NOUVEAU NOM" />
+            <Label layoutX="123.0" layoutY="149.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 16;" text="DONNEZ LE NOUVEAU CODE" />
+            <Label layoutX="126.0" layoutY="330.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 16;" text="DONNEZ LE NOUVEAU PRIX" />
+            <Label layoutX="196.0" layoutY="390.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 16;" text="IMAGE" />
+            <ImageView fitHeight="140.0" fitWidth="160.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pencil.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="749.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/adjust.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="1017.0" layoutY="32.0" prefHeight="675.0" prefWidth="363.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+            <children>
+                <Label layoutX="101.0" layoutY="630.0" style="-fx-text-fill: #9c95a7; -fx-font-weight: bold; -fx-font-size: 12;" text="InnoHire 2024/2025 © (copyright)" />
+                <Label layoutX="34.0" layoutY="131.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 25;" text="Desktop" />
+                <Label layoutX="292.0" layoutY="149.0" style="-fx-text-fill: #9c95a7; -fx-font-weight: bold; -fx-font-size: 12;" text="See all" />
+                <AnchorPane fx:id="AnchoPaneMessage1311" layoutX="24.0" layoutY="175.0" prefHeight="455.0" prefWidth="315.0" style="-fx-background-color: #f2f5ec; -fx-background-radius: 10;">
+                    <children>
+                        <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" style="-fx-background-color: #5955b3; -fx-text-fill: #ffffff;" styleClass="button-normal" stylesheets="@css/styles.css" text="List Quiz">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutX="14.0" layoutY="63.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="List users">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutX="14.0" layoutY="118.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Make Post">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutX="17.0" layoutY="174.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="List Claim">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutX="17.0" layoutY="229.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Etablishment">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutX="17.0" layoutY="345.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Settings &amp; Privacy">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutX="17.0" layoutY="399.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Help &amp; Support">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutX="17.0" layoutY="288.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" styleClass="button-normal" stylesheets="@css/styles.css" text="Chat">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <Button layoutX="307.0" layoutY="13.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="37.0" style="-fx-background-color: #ffffff; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 50; -fx-font-size: 13;">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </AnchorPane>
+      <Label layoutX="380.0" layoutY="57.0" prefHeight="66.0" prefWidth="299.0" style="-fx-text-fill: #5955b3; -fx-font-weight: bold; -fx-font-size: 45;" text="Modifier Quiz">
+         <font>
+            <Font size="71.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
